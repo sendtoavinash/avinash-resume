@@ -99,6 +99,7 @@ a:hover { text-decoration: underline; }
   height: 8px;
   border-radius: 4px;
   transition: width 1s;
+  width: 0;
 }
 .skill-bar span { font-weight: 600; }
 
@@ -138,6 +139,11 @@ a:hover { text-decoration: underline; }
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
+
+/* Reveal animations for timeline */
+.timeline-item.reveal { opacity: 0; transform: translateY(8px); transition: all 420ms ease; }
+.timeline-item.show { opacity: 1; transform: none; }
+.timeline-item.dim { opacity: 0.35; }
 
 /* Certification Badges */
 .badges { list-style: none; padding: 0; display: flex; gap: 24px; flex-wrap: wrap; }
@@ -185,6 +191,43 @@ body.dark-theme #contactForm input, body.dark-theme #contactForm textarea {
   background: #222; color: #eee; border: 1px solid #444;
 }
 body.dark-theme #contactForm button { background: #00b4ff; }
+
+/* Chips */
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 16px; }
+.chip {
+  background: #e9f3fb;
+  border: 1px solid #cfe6fb;
+  color: #045a8d;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.chip.active { background: #0078d4; border-color: #0078d4; color: #fff; }
+body.dark-theme .chip { background: #1f3a4c; border-color: #2a4f68; color: #bfe4ff; }
+body.dark-theme .chip.active { background: #00b4ff; border-color: #00b4ff; color: #001018; }
+
+/* Metrics */
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 12px; }
+.metric { background: #f4f6fb; border-radius: 8px; padding: 12px; text-align: center; }
+.metric .num { font-size: 1.4em; font-weight: 800; color: #0078d4; }
+.metric .label { display: block; color: #556; font-size: 0.9em; margin-top: 2px; }
+body.dark-theme .metric { background: #1f1f1f; }
+
+/* Projects */
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.project h3 { margin-bottom: 4px; }
+.project .org { color: var(--muted); }
+.project .stack { color: var(--muted); font-size: 0.95em; }
+
+/* Print styles */
+@media print {
+  body { background: #fff !important; color: #000 !important; }
+  .card { background: #fff !important; box-shadow: none !important; }
+  .sidebar, .sidebar-nav, #themeToggle, .chips { display: none !important; }
+  .main-content { margin: 0 !important; padding: 0 !important; }
+  a { color: #000 !important; text-decoration: underline !important; }
+}
 
 /* Mobile */
 @media (max-width: 900px) {
