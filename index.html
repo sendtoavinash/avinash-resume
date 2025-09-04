@@ -1,131 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Avinash Upadhyay — Senior Software Engineer</title>
-  <meta name="description" content="Senior Software Engineer — Java 17, Spring Boot 3, Kafka, PostgreSQL, Kubernetes, AWS." />
+  <meta name="description" content="Senior Software Engineer — Java, Spring Boot, Kafka, PostgreSQL, Kubernetes, AWS." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <h1>Avinash Upadhyay</h1>
-        <p>Senior Software Engineer — Java • Spring Boot • Kafka • Cloud</p>
-      </div>
-      <nav class="nav">
-        <button id="navToggle" aria-label="Toggle navigation">☰</button>
-        <ul id="navMenu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#education">Education</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero container">
-    <div class="hero-left">
-      <h2>Senior Software Engineer</h2>
-      <p class="lead">
-        6+ years building Java microservices and Kafka pipelines, cutting API latency by 30% with Redis, and shipping on Kubernetes with CI/CD. Experience across Salesforce/Mulesoft integrations, observability, and high-throughput eventing at enterprise scale.
-      </p>
-      <p>
-        <strong>Experience:</strong> <span id="expCounter">0</span> years
-      </p>
-      <div class="contact">
-        <a href="tel:+919899978973">+91 9899978973</a>
-        <span>•</span>
-        <a href="mailto:sendtoavinash@outlook.com">sendtoavinash@outlook.com</a>
-        <span>•</span>
-        <a href="https://www.linkedin.com/in/sendtoavinash" target="_blank" rel="noopener">LinkedIn</a>
-        <span>•</span>
-        <a href="https://github.com/sendtoavinash" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <div class="actions">
-        <a class="btn primary" href="#experience">View Experience</a>
-        <button id="themeToggle" class="btn">Toggle Theme</button>
-        <a class="btn" href="./assets/Avinash_Upadhyay_Resume.pdf" download>Download PDF</a>
-      </div>
-    </div>
-  </section>
-
-  <main class="container">
-    <section id="about" class="card">
-      <h3>Summary</h3>
-      <p>
-        Senior Software Engineer experienced with Java 17, Spring Boot 3.x, Kafka (Schema Registry/Avro), and PostgreSQL. Built event-driven and reactive systems, improved performance with Redis caching, and delivered secure, observable microservices deployed via Jenkins, Docker, and Kubernetes. AWS and EY IT Architecture certified.
-      </p>
-      <ul class="highlights">
-        <li>30% faster API responses using Redis caching; reduced DB load significantly.</li>
-        <li>Kafka-based pipelines handling 500K+ events/day; improved uptime by 15%.</li>
-        <li>Automated CI/CD enabling up to 4x faster deployments; strong test/coverage discipline.</li>
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="assets/profile.jpg" alt="Avinash Upadhyay" class="profile-img" />
+      <h1>Avinash Upadhyay</h1>
+      <p class="title">Senior Software Engineer</p>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:sendtoavinash@outlook.com">sendtoavinash@outlook.com</a></li>
+        <li><i class="fa-solid fa-phone"></i> <a href="tel:+919899978973">+91 9899978973</a></li>
+        <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/sendtoavinash" target="_blank">LinkedIn</a></li>
+        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/sendtoavinash" target="_blank">GitHub</a></li>
       </ul>
-    </section>
-
-    <section id="experience" class="card timeline">
-      <h3>Experience</h3>
-      <div class="timeline-container">
-        <!-- Repeat for each job -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Senior Software Engineer</h4>
-            <p class="org">TELUS Digital, Noida, India</p>
-            <span class="meta">Sep 2024 – Present</span>
-            <ul>
-              <li>Architected Java 17/Spring Boot 3 microservices integrating Salesforce, OIS, and Mulesoft for 10+ client apps, processing 1M+ daily transactions with Spring Security.</li>
-              <li>Reduced deployment time by 40% using automated CI/CD pipelines.</li>
-              <li>Improved system uptime to 99.9% with Kafka eventing and Redis caching.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- ...repeat for other jobs... -->
+      <div class="sidebar-actions">
+        <a class="btn" href="./assets/Avinash_Upadhyay_Resume.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download PDF</a>
+        <button id="themeToggle" class="btn"><i class="fa-solid fa-moon"></i> Toggle Theme</button>
       </div>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="main-content">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        Senior Software Engineer with 6+ years of experience building scalable Java microservices, event-driven architectures, and cloud-native solutions. Proven track record in reducing API latency, automating CI/CD, and integrating enterprise platforms like Salesforce and Mulesoft. Passionate about clean code, observability, and delivering robust solutions on Kubernetes and AWS.
+      </p>
     </section>
-
-    <section id="skills" class="card">
-      <h3>Technical Skills</h3>
-      <div class="skills-grid">
-        <div>
-          <h4>Languages</h4>
-          <div class="skill-bar"><span>Java</span><div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div></div>
-          <div class="skill-bar"><span>JavaScript</span><div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div></div>
-          <div class="skill-bar"><span>SQL</span><div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div></div>
-        </div>
-        <div>
-          <h4>Frameworks</h4>
-          <div class="skill-bar"><span>Spring Boot</span><div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div></div>
-          <div class="skill-bar"><span>Spring Cloud</span><div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div></div>
-          <div class="skill-bar"><span>Flowable</span><div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div></div>
-        </div>
-        <div>
-          <h4>Data & Messaging</h4>
-          <p>PostgreSQL, MySQL, MongoDB, Redis, Kafka, RabbitMQ</p>
-        </div>
-        <div>
-          <h4>Testing</h4>
-          <p>JUnit, Mockito, TestContainers, WireMock, Selenium WebDriver, TestNG, Postman</p>
-        </div>
-        <div>
-          <h4>DevOps & Cloud</h4>
-          <p>Jenkins, Docker, Kubernetes, AWS, Swagger, Prometheus, Grafana, Splunk, Zipkin, Sleuth</p>
-        </div>
-        <div>
-          <h4>Tooling</h4>
-          <p>IntelliJ IDEA, Eclipse, VS Code, Cursor, GitHub, JIRA, Notion</p>
-        </div>
+    <!-- ...existing code... -->
+<section id="experience" class="card">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">Sep 2024 – Present</div>
+      <div class="timeline-content">
+        <h3>Senior Software Engineer — TELUS Digital, Noida, India</h3>
+        <ul>
+          <li>Architected Java 17 and Spring Boot 3.x microservices for Charter Communications, integrating Salesforce, OIS, Mulesoft, and apps for 10+ clients, processing 1M+ daily transactions with Spring Security.</li>
+          <li>Designed Kafka-based event-driven systems (Schema Registry, Avro) with Quartz Scheduler for real-time Salesforce data publishing, handling 500K+ events daily and boosting uptime by 15%.</li>
+          <li>Developed asynchronous APIs using Spring WebFlux, PostgreSQL, Hibernate, and JPA, reducing request times in multi-environment setups.</li>
+          <li>Implemented Redis caching to optimize responses and cut database load by 30%, enabling scalable real-time workflows.</li>
+          <li>Built resilient microservices communication with Spring Cloud (Feign, Resilience4j, Eureka, Config Server), RabbitMQ, and Lombok for fault-tolerant architectures.</li>
+          <li>Automated CI/CD with Jenkins, Maven, Docker, Kubernetes, and Git, achieving 4x faster deployments.</li>
+          <li>Ensured quality via JUnit, Mockito, TestContainers, WireMock, Postman, JaCoCo, and SonarQube (90%+ coverage); integrated Splunk, Kibana, Grafana, Prometheus, Sleuth, and Zipkin for monitoring, resolving 95% issues within SLAs and reducing manual processing by 25%.</li>
+        </ul>
       </div>
-    </section>
-
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Sep 2022 – Aug 2024</div>
+      <div class="timeline-content">
+        <h3>Technology Consultant — Ernst & Young, Gurugram, India</h3>
+        <ul>
+          <li>Developed PARIVESH 2.0 workflow app using Spring Boot, Spring Cloud, and Java 1.8 microservices, supporting 500+ daily environmental clearance proposals across authorities.</li>
+          <li>Implemented custom Flowable engine for dynamic workflows and roles, cutting approval times by 20%.</li>
+          <li>Built scalable backend with PostgreSQL, Hibernate, and Kafka for efficient data handling in high-volume systems.</li>
+          <li>Designed RESTful APIs and integrated NSWS/Union Bank services for single-window access, secure payments (10K+ monthly transactions), and streamlined processes.</li>
+          <li>Developed SMTP/MIME-based notification services for email/SMS, achieving 99.9% delivery reliability.</li>
+          <li>Managed Docker/Jenkins CI/CD and Kibana monitoring for robust deployments and quick issue resolution.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Apr 2021 – Aug 2022</div>
+      <div class="timeline-content">
+        <h3>Software Developer — Velocis Systems Pvt. Ltd., New Delhi, India</h3>
+        <ul>
+          <li>Developed VAHAN 4.0 web apps for MORTH, gathering nationwide RTO requirements to handle 5K+ daily user interactions.</li>
+          <li>Migrated legacy code to Java 1.8, Spring Boot microservices, and REST APIs, improving performance by 25% and RTO data functionality.</li>
+          <li>Designed JSF/PrimeFaces interfaces with Core Java, optimizing legacy elements to reduce response times by 15%.</li>
+          <li>Streamlined PostgreSQL database and RabbitMQ workflows for extensive RTO datasets, achieving 99.8% uptime.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Sep 2019 – Mar 2021</div>
+      <div class="timeline-content">
+        <h3>Software Associate — Optus Infotech Pvt. Ltd., Hyderabad, India</h3>
+        <ul>
+          <li>Developed gaming-focused web applications with RESTful APIs, supporting 100K+ user interactions monthly.</li>
+          <li>Designed and tested RESTful APIs and managed PostgreSQL for large datasets, handling 50K+ records daily.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">May 2018 – Aug 2018</div>
+      <div class="timeline-content">
+        <h3>Industrial Trainee — National Informatics Centre (NIC), New Delhi, India</h3>
+        <ul>
+          <li>Migrated CONFONET system from IBM DB2 to PostgreSQL, ensuring zero downtime during live upgrades.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills" class="card">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div>
+      <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+      <div class="skill-bar"><span>Java</span><div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div></div>
+      <div class="skill-bar"><span>JavaScript</span><div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div></div>
+      <div class="skill-bar"><span>SQL</span><div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div></div>
+    </div>
+    <div>
+      <h3><i class="fa-solid fa-cubes"></i> Frameworks & Libraries</h3>
+      <div class="skill-bar"><span>Spring Boot</span><div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div></div>
+      <div class="skill-bar"><span>Spring Cloud</span><div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div></div>
+      <div class="skill-bar"><span>Spring Security</span><div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div></div>
+      <div class="skill-bar"><span>Flowable</span><div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div></div>
+      <div class="skill-bar"><span>JSP</span><div class="bar-bg"><div class="bar-fill" style="width: 70%;"></div></div></div>
+      <div class="skill-bar"><span>PrimeFaces</span><div class="bar-bg"><div class="bar-fill" style="width: 70%;"></div></div></div>
+    </div>
+    <div>
+      <h3><i class="fa-solid fa-database"></i> Databases & Caching</h3>
+      <p>PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Kafka</p>
+    </div>
+    <div>
+      <h3><i class="fa-solid fa-vial"></i> Testing & QA</h3>
+      <p>JUnit, Mockito, TestContainers, WireMock, Selenium WebDriver, TestNG, Postman</p>
+    </div>
+    <div>
+      <h3><i class="fa-solid fa-cloud"></i> DevOps & Tools</h3>
+      <p>Jenkins, Docker, Kubernetes, AWS, Swagger, Prometheus, Grafana, Splunk, Zipkin, Sleuth</p>
+    </div>
+    <div>
+      <h3><i class="fa-solid fa-toolbox"></i> IDEs & Productivity</h3>
+      <p>IntelliJ IDEA, Eclipse, VS Code, Cursor AI, GitHub, JIRA, Notion</p>
+    </div>
+  </div>
+</section>
     <section id="certifications" class="card">
-      <h3>Certifications</h3>
-      <ul class="compact badges">
+      <h2>Certifications</h2>
+      <ul class="badges">
         <li>
           <a href="https://www.credly.com/badges/799ee819-8fad-470b-be2d-3c801c03a405/linked_in_profile" target="_blank" rel="noopener">
             <img src="assets/ey-arch.png" alt="EY IT Architecture" class="badge-img" /> EY IT Architecture Certification (2023)
@@ -143,14 +165,20 @@
         </li>
       </ul>
     </section>
-
     <section id="education" class="card">
-      <h3>Education</h3>
-      <p><strong>B.Tech, Instrumentation and Control Engineering</strong> — GGSIPU, New Delhi (Aug 2014 – Jun 2018)</p>
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2014 – Jun 2018</div>
+          <div class="timeline-content">
+            <h3>B.Tech, Instrumentation and Control Engineering</h3>
+            <p>GGSIPU, New Delhi</p>
+          </div>
+        </div>
+      </div>
     </section>
-
     <section id="contact" class="card">
-      <h3>Contact Me</h3>
+      <h2>Contact Me</h2>
       <form id="contactForm" aria-label="Contact Form">
         <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
         <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
@@ -159,14 +187,10 @@
       </form>
       <div id="formMsg" aria-live="polite"></div>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
+    <footer class="site-footer">
       <p>&copy; <span id="year"></span> Avinash Upadhyay</p>
-    </div>
-  </footer>
-
+    </footer>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

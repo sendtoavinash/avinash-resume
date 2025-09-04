@@ -14,36 +14,7 @@ if (themeToggle) {
   });
 }
 
-if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      navMenu?.classList.remove('open');
-      history.pushState(null, '', a.getAttribute('href'));
-    }
-  });
-});
-
-// Experience Counter Animation
-document.addEventListener('DOMContentLoaded', function() {
-  const expCounter = document.getElementById('expCounter');
-  if (expCounter) {
-    let years = 6;
-    let count = 0;
-    let interval = setInterval(() => {
-      if (count < years) {
-        count++;
-        expCounter.textContent = count;
-      } else {
-        clearInterval(interval);
-      }
-    }, 100);
-  }
-});
+document.getElementById('year').textContent = new Date().getFullYear();
 
 // Contact Form Handler
 const contactForm = document.getElementById('contactForm');
@@ -67,3 +38,14 @@ if (themeToggle) {
     document.body.classList.add('dark-theme');
   }
 }
+
+// Smooth scroll for sidebar nav (if visible)
+document.querySelectorAll('.sidebar-nav a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});

@@ -1,40 +1,30 @@
 # Avinash Upadhyay — Digital Resume
 
-A modern, interactive digital resume built with HTML, CSS, and JavaScript.
+A modern, interactive digital resume .
 
 ## Features
 
-- **Experience Timeline:** Visual vertical timeline for career history.
-- **Skill Proficiency Bars:** Animated bars showing expertise in each skill.
-- **Animated Experience Counter:** Years of experience counter in hero section.
-- **Certification Badges:** Visual badges for certifications.
-- **Contact Form:** Simple form for recruiters to reach out.
-- **Theme Toggle:** Light/Dark mode with saved preference.
-- **Responsive Design:** Works on mobile and desktop.
+- Fixed sidebar with profile, contact, and navigation
+- Experience timeline with detailed achievements
+- Animated skill bars and icons
+- Certification badges with links
+- Responsive, card-based layout
+- Theme toggle (light/dark) with saved preference
+- Accessible contact form
+- Mobile-friendly design
 
 ## Usage
 
-1. Clone the repo.
-2. Open `index.html` in your browser.
-3. To use the contact form, fill and submit (no backend, shows thank you message).
-4. Toggle theme using the button in the hero section.
+1. Place your profile photo as `assets/profile.jpg`.
+2. Add certification badge images (`ey-arch.png`, `ey-cloud.png`, `azure.png`) in `assets/`.
+3. Open `index.html` in your browser.
 
 ## Customization
 
-- Update skills and proficiency in `index.html`.
-- Add/remove experience items in the timeline.
-- Replace certification badge images in `assets/`.
-- Style changes in `styles.css`.
-
-## Accessibility
-
-- ARIA labels and live regions for better screen reader support.
-- Keyboard accessible forms and buttons.
+- Update experience, skills, and education in `index.html`.
+- Change colors and layout in `styles.css`.
+- Add more sections or links as needed.
 
 ## License
 
 MIT
-
----
-
-**Live Demo:** https://sendtoavinash.github.io/avinash-resume
