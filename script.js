@@ -4,22 +4,7 @@ if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
-// Theme Toggle with localStorage (single source of truth)
-const themeToggleButton = document.getElementById('themeToggle');
-const loadThemePreference = () => {
-  const saved = localStorage.getItem('theme');
-  if (saved === 'dark') {
-    document.body.classList.add('dark-theme');
-  }
-};
-const toggleTheme = () => {
-  document.body.classList.toggle('dark-theme');
-  localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
-};
-loadThemePreference();
-if (themeToggleButton) {
-  themeToggleButton.addEventListener('click', toggleTheme);
-}
+// Dark mode is the default; theme toggle removed
 
 // Contact Form Handler
 const contactForm = document.getElementById('contactForm');

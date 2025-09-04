@@ -15,8 +15,7 @@ A modern, interactive digital resume .
 
 ## Usage
 
-1. Place your profile photo as `assets/profile.jpg`.
-2. Add certification badge images (`ey-arch.png`, `ey-cloud.png`, `azure.png`) in `assets/`.
+1. Add certification badge images (`ey-arch.png`, `ey-cloud.png`, `azure.png`) in `assets/`.
 3. Open `index.html` in your browser.
 
 ## Customization
