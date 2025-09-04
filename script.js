@@ -92,8 +92,8 @@ if (aboutCounters.length) {
       let target = Number(element.getAttribute('data-target')) || 0;
       let decimals = 0;
       if (element.getAttribute('data-compute') === 'years-experience') {
-        // Compute years since May 2018 to current date
-        const startDate = new Date('2018-05-01T00:00:00Z');
+        // Compute years since Sept 2019 to current date
+        const startDate = new Date('2019-09-01T00:00:00Z');
         const now = new Date();
         const diffMs = now - startDate;
         const years = diffMs / (1000 * 60 * 60 * 24 * 365.25);
