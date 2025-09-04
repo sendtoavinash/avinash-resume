@@ -51,6 +51,59 @@ a:hover { text-decoration: underline; }
 .compact { margin: 0; padding-left: 18px; }
 .site-footer { padding: 24px 0 40px; color: var(--muted); text-align: center; }
 
+/* Skill Bars */
+.skill-bar { margin-bottom: 8px; }
+.bar-bg { background: #eee; border-radius: 4px; height: 8px; width: 100%; }
+.bar-fill { background: #0078d4; height: 8px; border-radius: 4px; transition: width 1s; }
+.skill-bar span { font-weight: 600; margin-right: 8px; }
+
+/* Timeline */
+.timeline-container { position: relative; margin-left: 20px; }
+.timeline-item { position: relative; margin-bottom: 32px; }
+.timeline-dot {
+  position: absolute;
+  left: -20px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background: #0078d4;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.timeline-content { background: #f9f9f9; padding: 16px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+
+/* Certification Badges */
+.badges .badge-img {
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Contact Form */
+#contactForm { display: flex; flex-direction: column; gap: 8px; max-width: 400px; }
+#contactForm input, #contactForm textarea { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+#contactForm button { background: #0078d4; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; }
+#formMsg { margin-top: 8px; color: #0078d4; font-weight: 600; }
+
+/* Animated Counter */
+#expCounter { font-size: 1.2em; color: #0078d4; font-weight: bold; }
+
+/* Dark Theme */
+body.dark-theme {
+  background: #181818;
+  color: #eee;
+}
+body.dark-theme .card, body.dark-theme .timeline-content {
+  background: #232323;
+  color: #eee;
+}
+body.dark-theme .bar-bg { background: #333; }
+body.dark-theme .bar-fill { background: #00b4ff; }
+body.dark-theme #contactForm input, body.dark-theme #contactForm textarea {
+  background: #222; color: #eee; border: 1px solid #444;
+}
+body.dark-theme #contactForm button { background: #00b4ff; }
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav button { display: inline-flex; background: var(--chip); color: var(--text); border: 1px solid var(--border); padding: 6px 10px; border-radius: 8px; }
