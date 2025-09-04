@@ -18,6 +18,31 @@ html, body {
   background: var(--bg);
   transition: background 0.3s, color 0.3s;
 }
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 280px;
+  background: #0e1116;
+  border-right: 1px solid var(--border);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-content {
+  margin-left: 280px;
+  padding: 24px;
+}
+.profile h1 { margin: 0; font-size: 22px; font-weight: 800; }
+.profile .title { margin: 0; color: var(--muted); }
+.contact-list { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.contact-list i { color: #7dd3fc; width: 18px; }
+.sidebar-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.sidebar-nav ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.sidebar-nav a { color: var(--text); padding: 6px 8px; border-radius: 6px; }
+.sidebar-nav a:hover { background: var(--chip); text-decoration: none; }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .container { width: 100%; max-width: 1024px; margin: 0 auto; padding: 0 16px; }
@@ -51,11 +76,12 @@ a:hover { text-decoration: underline; }
 .btn:hover { background: #005fa3; }
 
 .card {
-  background: #232323;
+  background: #15171c;
+  border: 1px solid #1e232d;
   border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  padding: 32px 24px;
-  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  padding: 28px 22px;
+  margin-bottom: 24px;
 }
 .card h2 { margin-top: 0; color: #0078d4; }
 .card h3 { margin: 0 0 8px; font-size: 20px; }
@@ -105,8 +131,8 @@ a:hover { text-decoration: underline; }
 
 /* Timeline */
 .timeline {
-  border-left: 3px solid #0078d4;
-  margin-left: 16px;
+  border-left: 2px dashed #2a3140;
+  margin-left: 8px;
   padding-left: 24px;
 }
 .timeline-item {
@@ -115,29 +141,30 @@ a:hover { text-decoration: underline; }
 }
 .timeline-dot {
   position: absolute;
-  left: -20px;
-  top: 8px;
-  width: 12px;
-  height: 12px;
-  background: #0078d4;
+  left: -23px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background: #00b4ff;
   border-radius: 50%;
-  border: 2px solid #fff;
+  box-shadow: 0 0 0 3px rgba(0,180,255,0.12);
 }
 .timeline-date {
   position: absolute;
-  left: -120px;
+  left: -128px;
   top: 0;
-  color: #0078d4;
+  color: #7dd3fc;
   font-weight: 600;
   font-size: 0.95em;
   width: 100px;
   text-align: right;
 }
 .timeline-content {
-  background: #232323;
+  background: #0e1116;
   padding: 16px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 10px;
+  border: 1px solid #1e232d;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
 /* Reveal animations for timeline */
