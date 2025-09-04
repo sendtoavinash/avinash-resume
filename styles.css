@@ -51,7 +51,7 @@ a:hover { text-decoration: underline; }
 .btn:hover { background: #005fa3; }
 
 .card {
-  background: #fff;
+  background: #232323;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
   padding: 32px 24px;
@@ -88,14 +88,14 @@ a:hover { text-decoration: underline; }
 /* Skill Bars */
 .skill-bar { margin-bottom: 12px; }
 .bar-bg {
-  background: #e0e7ef;
+  background: #333;
   border-radius: 4px;
   height: 8px;
   width: 100%;
   margin-top: 4px;
 }
 .bar-fill {
-  background: #0078d4;
+  background: #00b4ff;
   height: 8px;
   border-radius: 4px;
   transition: width 1s;
@@ -134,7 +134,7 @@ a:hover { text-decoration: underline; }
   text-align: right;
 }
 .timeline-content {
-  background: #f4f6fb;
+  background: #232323;
   padding: 16px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -154,65 +154,47 @@ a:hover { text-decoration: underline; }
   object-fit: contain;
   margin-right: 8px;
   border-radius: 4px;
-  border: 1px solid #e0e7ef;
+  border: 1px solid #333;
 }
 
 /* Contact Form */
 #contactForm { display: flex; flex-direction: column; gap: 12px; max-width: 400px; }
 #contactForm input, #contactForm textarea {
   padding: 10px;
-  border: 1px solid #e0e7ef;
+  border: 1px solid #444;
+  background: #222;
+  color: #eee;
   border-radius: 4px;
   font-size: 1em;
 }
-#contactForm button { background: #0078d4; color: #fff; border: none; padding: 10px 16px; border-radius: 4px; cursor: pointer; font-weight: 600; }
-#formMsg { margin-top: 8px; color: #0078d4; font-weight: 600; }
+#contactForm button { background: #00b4ff; color: #001018; border: none; padding: 10px 16px; border-radius: 4px; cursor: pointer; font-weight: 600; }
+#formMsg { margin-top: 8px; color: #00b4ff; font-weight: 600; }
 
 /* Animated Counter */
 #expCounter { font-size: 1.2em; color: #0078d4; font-weight: bold; }
 
 /* Dark Theme */
-body.dark-theme {
-  background: #181818;
-  color: #eee;
-}
-body.dark-theme .sidebar, body.dark-theme .card, body.dark-theme .timeline-content {
-  background: #232323;
-  color: #eee;
-}
-body.dark-theme .bar-bg { background: #333; }
-body.dark-theme .bar-fill { background: #00b4ff; }
-body.dark-theme .btn { background: #00b4ff; }
-body.dark-theme .btn:hover { background: #0078d4; }
-body.dark-theme .timeline { border-left: 3px solid #00b4ff; }
-body.dark-theme .timeline-date { color: #00b4ff; }
-body.dark-theme .badge-img { border: 1px solid #333; }
-body.dark-theme #contactForm input, body.dark-theme #contactForm textarea {
-  background: #222; color: #eee; border: 1px solid #444;
-}
-body.dark-theme #contactForm button { background: #00b4ff; }
+/* unified dark mode base styles applied above; removed theme toggle variants */
 
 /* Chips */
 .chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 16px; }
 .chip {
-  background: #e9f3fb;
-  border: 1px solid #cfe6fb;
-  color: #045a8d;
+  background: #1f3a4c;
+  border: 1px solid #2a4f68;
+  color: #bfe4ff;
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 0.9em;
   cursor: pointer;
 }
-.chip.active { background: #0078d4; border-color: #0078d4; color: #fff; }
-body.dark-theme .chip { background: #1f3a4c; border-color: #2a4f68; color: #bfe4ff; }
-body.dark-theme .chip.active { background: #00b4ff; border-color: #00b4ff; color: #001018; }
+.chip.active { background: #00b4ff; border-color: #00b4ff; color: #001018; }
 
 /* Metrics */
 .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 12px; }
-.metric { background: #f4f6fb; border-radius: 8px; padding: 12px; text-align: center; }
+.metric { background: #1f1f1f; border-radius: 8px; padding: 12px; text-align: center; }
 .metric .num { font-size: 1.4em; font-weight: 800; color: #0078d4; }
 .metric .label { display: block; color: #556; font-size: 0.9em; margin-top: 2px; }
-body.dark-theme .metric { background: #1f1f1f; }
+ 
 
 /* Projects */
 .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
